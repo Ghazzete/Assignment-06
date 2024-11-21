@@ -7,7 +7,6 @@ function Home() {
 
   return (
     <>
-      {/* Top Header Section */}
       <header className="hidden lg:flex h-[54px] bg-[#F7F7F7] pl-[64px] pr-[62px] items-center border-b border-[#000]">
         <div className="h-[30px] w-full text-[14px] text-[#000] flex items-center justify-between">
           <p>
@@ -46,32 +45,27 @@ function Home() {
           />
         </div>
       </header>
-
-      {/* Main Header Section */}
       <header className="h-[72px] flex items-center bg-[#F7F7F7] px-4 lg:px-[64px] justify-between border-b border-[#000]">
-        {/* Logo Section */}
-        <div className="flex items-center">
-          <div className="relative">
-            <Image
-              src={"/logos/Union-1.svg"}
-              alt="logo"
-              width={25.76}
-              height={26.6}
-              className="absolute left-1"
-            />
-            <Image
-              src={"/logos/Union-2.svg"}
-              alt="logo"
-              width={25.76}
-              height={26.6}
-              className="absolute left-[12px]"
-            />
-          </div>
-          <h2 className="font-inter font-bold text-[25.7px] ml-8">Ddsgnr</h2>
+      <div className="relative w-[100px] h-[50px] bg-gray-100 ">
+  <Image
+    src="/logos/Union-1.svg"
+    alt="logo"
+    width={25.76}
+    height={26.6}
+    className="absolute left-8 bottom-3"
+  />
+  <Image
+    src="/logos/Union-2.svg"
+    alt="logo"
+    width={25.76}
+    height={26.6}
+    className="absolute bottom-3 left-[40px]"
+  />
+</div>
+        <div className="flex justify-center">
+          <h2 className="font-inter font-bold text-[25.7px]">Ddsgnr</h2>
         </div>
-
-        {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center space-x-8">
+        <nav className="hidden ml-40 md:flex items-center space-x-8">
           <a href="#" className="text-[16px]">Home</a>
           <a href="#" className="text-[16px]">Courses</a>
           <a href="#" className="text-[16px]">Services</a>
@@ -85,8 +79,6 @@ function Home() {
             Sign Up
           </button>
         </nav>
-
-        {/* Hamburger Menu for Mobile */}
         <button
           className="block md:hidden"
           onClick={() => setSidebarOpen(!isSidebarOpen)}
@@ -100,7 +92,6 @@ function Home() {
         </button>
       </header>
 
-      {/* Mobile Sidebar */}
       {isSidebarOpen && (
         <div className="fixed top-0 left-0 w-[70%] h-full bg-white shadow-lg z-50 p-4">
           <button
