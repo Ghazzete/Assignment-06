@@ -15,7 +15,7 @@ const Courses = () => {
     {
       title: "Development",
       description: "50+ Courses Available",
-      image: "/Frames/Frame3.svg",
+      image: "/Frames/frame3.svg",
     },
     {
       title: "Communication",
