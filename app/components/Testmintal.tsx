@@ -47,7 +47,7 @@ export default function Testmintal () {
         <div className="flex flex-col shadow-md border border-[#000] bg-[#F7F7F7] min-h-[294px] md:w-[90%] lg:w-[30%] snap-center">
           <div className='m-10 justify-center'>
             <Image 
-              src={"/logos/stars.svg"}
+              src={"/logos/Stars.svg"}
               alt='stars'
               height={18.89}
               width={116}
@@ -74,7 +74,7 @@ export default function Testmintal () {
         <div className="flex flex-col shadow-md border border-[#000] bg-[#F7F7F7] min-h-[294px] md:w-[90%] lg:w-[30%] snap-center">
           <div className='m-10 justify-center'>
             <Image 
-              src={"/logos/stars.svg"}
+              src={"/logos/Stars.svg"}
               alt='stars'
               height={18.89}
               width={116}
